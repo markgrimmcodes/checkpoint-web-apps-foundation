@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster:regular);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 * {
   box-sizing: border-box;
 }
@@ -11,12 +12,45 @@ body {
 }
 #wrap {
   position: absolute;
+  width: 100vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 h1 {
   font-family: Lobster;
+  font-size: 4em;
   color: snow;
-  text-shadow: 2px 2px black;
+  text-shadow: 4px 4px black;
+}
+
+form {
+  display: grid;
+  grid-gap: 0.6em;
+}
+input {
+  all: unset;
+  background: snow;
+  border: 2px solid black;
+  padding: 0.2em;
+  text-align: center;
+  border-radius: 2px;
+  font-family: Open Sans;
+}
+button {
+  all: unset;
+  background: black;
+  color: snow;
+  text-align: center;
+  padding: 0.2em;
+  margin-bottom: 1em;
+  font-family: Open Sans;
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: bold;
 }
