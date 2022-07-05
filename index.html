@@ -8,24 +8,36 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="wrap">
+    <main id="wrap">
       <h1>Password Check</h1>
       <form onsubmit="return false">
         <input class="pw" type="password" id="firstPW" />
         <input class="pw" type="password" id="secPW" />
         <button>Show Passwords</button>
       </form>
-      <p id="equal">Passwords are equal</p>
-      <span id="equalMark"></span>
-      <p id="lowCase">Lower Case Letters</p>
-      <span id="lowCaseMark"></span>
-      <p id="upCase">Upper Case Letters</p>
-      <span id="upCaseMark"></span>
-      <p id="contNum">Contains Numbers</p>
-      <span id="contNumMark"></span>
-      <p id="length">At least 10 characters long</p>
-      <span id="lengthMark"></span>
-    </div>
+      <div class="requirements">
+        <div class="check-wrap">
+          <p id="equal">Passwords are equal</p>
+          <span id="equalMark"></span>
+        </div>
+        <div class="check-wrap">
+          <p id="lowCase">Lower Case Letters</p>
+          <span id="lowCaseMark"></span>
+        </div>
+        <div class="check-wrap">
+          <p id="upCase">Upper Case Letters</p>
+          <span id="upCaseMark"></span>
+        </div>
+        <div class="check-wrap">
+          <p id="contNum">Contains Numbers</p>
+          <span id="contNumMark"></span>
+        </div>
+        <div class="check-wrap">
+          <p id="length">At least 10 characters long</p>
+          <span id="lengthMark"></span>
+        </div>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
