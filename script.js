@@ -4,8 +4,8 @@ const inputs = document.querySelectorAll("input");
 const inputOne = document.querySelector("#firstPW");
 const inputTwo = document.querySelector("#secPW");
 
-let passwordOne = document.querySelector("#firstPW").value;
-let passwordTwo = document.querySelector("#secPW").value;
+let passwordOne = inputOne.value;
+let passwordTwo = inputTwo.value;
 
 inputOne.addEventListener("keyup", checkPassword);
 inputTwo.addEventListener("keyup", checkPassword);
@@ -82,4 +82,12 @@ function checkPassword() {
     console.log("your password contains numbers");
     document.querySelector("#contNumMark").innerText = "✔️";
   }
+}
+
+function markAsWrong() {
+  document.querySelector("#upCaseMark").innerText = "❌";
+}
+
+function markAsRight() {
+  document.querySelector("#contNumMark").innerText = "✔️";
 }
