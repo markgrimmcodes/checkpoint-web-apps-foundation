@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Check</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="wrap">
+      <h1>Password Check</h1>
+      <form onsubmit="return false">
+        <input
+          class="pw"
+          type="password"
+          id="firstPW"
+          placeholder="Choose your password"
+        />
+        <input
+          class="pw"
+          type="password"
+          id="secPW"
+          placeholder="Repeat your password"
+        />
+        <button>Show Passwords</button>
+      </form>
+      <div class="requirements">
+        <div class="check-wrap">
+          <p id="equal">Passwords are equal</p>
+          <span id="equalMark"></span>
+        </div>
+        <div class="check-wrap">
+          <p id="lowCase">Lower Case Letters</p>
+          <span id="lowCaseMark"></span>
+        </div>
+        <div class="check-wrap">
+          <p id="upCase">Upper Case Letters</p>
+          <span id="upCaseMark"></span>
+        </div>
+        <div class="check-wrap">
+          <p id="contNum">Contains Numbers</p>
+          <span id="contNumMark"></span>
+        </div>
+        <div class="check-wrap">
+          <p id="length">At least 10 characters long</p>
+          <span id="lengthMark"></span>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
