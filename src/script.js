@@ -83,11 +83,3 @@ function checkPassword() {
     document.querySelector("#contNumMark").innerText = "✔️";
   }
 }
-
-function markAsWrong() {
-  document.querySelector("#upCaseMark").innerText = "❌";
-}
-
-function markAsRight() {
-  document.querySelector("#contNumMark").innerText = "✔️";
-}

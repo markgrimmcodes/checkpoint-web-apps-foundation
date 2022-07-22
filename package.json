@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "serve": "serve ./src",
+    "e2e": "cypress open"
+  },
+  "name": "checkpoint-web-apps-foundation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "cypress": "^10.3.1",
+    "serve": "^14.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markgrimmcodes/checkpoint-web-apps-foundation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markgrimmcodes/checkpoint-web-apps-foundation/issues"
+  },
+  "homepage": "https://github.com/markgrimmcodes/checkpoint-web-apps-foundation#readme",
+  "description": ""
+}
